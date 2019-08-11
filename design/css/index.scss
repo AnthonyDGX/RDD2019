@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  background: -webkit-linear-gradient(#9e7d6e, #d5ba97);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+}
+
+.icons {
+  display: inline-flex;
+ flex-direction: row-reverse;
+}
+
+.bg-info {
+  background: transparent!important;
+}
+
+.vh10 {
+  min-height: 10vh;
+}
+
+.customIcons {
+  display: flex!important;
+  height: 40px;
+  width: 40px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.7s; 
+}
+
+.customIcons:hover {
+    transform: translateY(-10px);  
+}
+
+.customIcon {
+  margin: 0 auto;
+    align-self: center;
+    color: #d5ba97;
+
+    
+}
+
+// .customIcon:hover {
+//   transform: translateY(2px)
+// }
+
+
+.vh80 {
+  min-height: 80vh;
+}
+
+.navbar-brand {
+  font-weight: bolder !important;
+}
+
+.mainContainer {
+  width: 70%;
+  display: grid;
+}
+
+.textCounter {
+  font-family: 'Roboto';
+  color: #d5ba97;
+  margin: 0;
+  right: 0;
+  // direction: rtl;
+}
+.navbar-toggler{
+  border: solid 0px !important;
+}
+.inscriptionButton {
+  text-align: center;
+  margin-top: 1.5rem !important;
+  border-top: solid 1px #d5ba97;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.navBot {
+  background-color: transparent!important;
+  padding-bottom: 0px!important;
+  padding-top: 0px!important;
+  display: inline-flex;
+}
+
+.button {
+  margin-top: 1.5rem;
+  background: #d5ba97 !important;
+  background: linear-gradient(90deg, #9e7d6e, #d5ba97);
+  border: transparent !important;
+  font-size: 1.5rem !important;
+  border-radius: 3rem !important;
+  padding: 1rem 1.5rem !important;
+  transition: 0.7s!important;
+}
+
+.button:active {
+  box-shadow: 0 0 0 0rem rgb(213, 186, 151) !important;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 0rem rgb(213, 186, 151) !important;
+}
+
+.button:hover {
+  transform: translateY(10px);
+}
+
+.counterCard {
+  // background-color: #e7f2fd;
+  background-image: url("../assets/Picture1.png");
+  width: 145px;
+  height: 110px;
+  font-size: 42px;
+  color: #303030;
+  text-align: center;
+  line-height: 110px;
+  // border-radius: 80px 200px 200px 362px;
+  margin: 0 auto 5px;
+  -webkit-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+  background-position: center;
+
+  background-size: contain;
+
+  background-repeat: no-repeat;
+}
+
+.counterCard:hover {
+  // background-color: #d5ba97;
+  background-image: url("../assets/Picture2.png");
+  color: #fff;
+  // -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, .15);
+  // box-shadow: 0 6px 50px 8px rgba(21, 131, 233, .15);
+}
+
+.counter {
+  margin-top: 1.5rem;
+}
+
+.comingSoon {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(13, 15, 33, 1) 0%, rgba(5, 31, 63, 1) 100%);
+}
+
+
+.menuItem {
+  color: #d5ba97 !important;
+  font-family: 'Roboto';
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
+
+.active {
+  color: white !important;
+}
+
+.mainTitleCard {
+  text-align: center;
+  color: #d5ba97 !important;
+  border-bottom: solid 1px #d5ba97;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+canvas { 
+  display: block;
+  vertical-align: bottom; 
+} /* ---- particles.js container ---- */ 
+#particles-js{ 
+  position:absolute; 
+  width: 100%; 
+  height: 100%;  
+}
