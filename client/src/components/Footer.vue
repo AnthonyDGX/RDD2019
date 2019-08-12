@@ -75,7 +75,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
+<style lang="scss">
 
 .footerRow {
     
@@ -83,7 +83,7 @@ export default {
 .navBot {
   width: 100%;
   background: linear-gradient(90deg, black 0%, #0d0f21 0%, #051f3f 100%);
-  position: fixed;
+  
   left: 0;
   bottom: 0;
   padding-top: 0rem;
@@ -128,7 +128,7 @@ export default {
     display: flex!important;
     height: 30px;
     width: 30px;
-    background: white;
+    background: transparent;
     border-radius: 50%;
     transition: 0.7s; 
   }

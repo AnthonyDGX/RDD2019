@@ -23,17 +23,17 @@
         <!-- Links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-             <router-link class="nav-link menuItem" to="/Accueil">ACCUEIL</router-link>
+             <router-link v-bind:class="[itemMenu == 'accueil' ? 'nav-link menuItem active' : 'nav-link menuItem']" to="/Accueil">ACCUEIL</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link menuItem" href="#">NEWS</a>
+            <a v-bind:class="[itemMenu == 'news' ? 'nav-link menuItem active' : 'nav-link menuItem']"  href="#">NEWS</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link menuItem active" to="/Faq">FAQ</router-link>
+            <router-link v-bind:class="[itemMenu == 'faq' ? 'nav-link menuItem active' : 'nav-link menuItem']" to="/Faq">FAQ</router-link>
             <!-- <a class="nav-link menuItem" href="/Faq">FAQ</a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link menuItem" href="#">INSCRIPTIONS</a>
+            <a v-bind:class="[itemMenu == 'inscription' ? 'nav-link menuItem active' : 'nav-link menuItem']" href="#">INSCRIPTIONS</a>
           </li>
         </ul>
         <!-- Links -->
@@ -48,26 +48,45 @@
 <script>
 export default {
   name: "Header",
+  props: ['itemMenu'],
+  created: function () {
+  },
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      
     };
   }
-};
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
 .header {
-  background: linear-gradient(90deg, black 0%, #0d0f21 0%, #051f3f 100%);
-  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  background: transparent;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
 }
 .active {
-    color: #d5ba97!important;
+    color: white!important;
 }
 .vh10 {
     min-height: 10vh;
+  }
+
+  .menuItem {
+    color: #d5ba97!important;
+    font-family: 'Roboto';
+    font-size: 0.75rem;
+    font-weight: bolder;
+  }
+
+  .menuItem.active {
+          color: white!important;
+
+  }
+
+  .navbar-brand {
+      font-weight: bolder;
   }
 </style>

@@ -20,56 +20,19 @@
       >
       </vue-particles>
 
-    <div class="comingSoon">
-        <nav class="navbar navbar-expand-lg navbar-dark primary-color vh10">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">RDD 2k19</a>
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
-                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="mainMenu">
-
-                <!-- Links -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link menuItem active" href="#">ACCUEIL
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menuItem" href="#">NEWS</a>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link menuItem" to="/Faq">FAQ</router-link>
-                        <!-- <a class="nav-link menuItem" href="/Faq">FAQ</a> -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menuItem" href="#">INSCRIPTIONS</a>
-                    </li>
-
-                </ul>
-                <!-- Links -->
-
-
-            </div>
-            <!-- Collapsible content -->
-
-        </nav>
+    <div class="darkTheme">
+        <Header :itemMenu="accueil"></Header>
 
         <div class="container vh80 mainContainer">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 col-12 mainTitleCard">
-                    <h1>REMISE DES DIPLOMES</h1>
+                    <h1>REMISE DES diplômes</h1>
                     <h2>Promotion 2019</h2>
                 </div>
 
             </div>
             <div class="row justify-content-center align-items-center counter">
-                <div class="col-md-2 col-7">
+                <div class="col-md-2 col-6">
                     <div class="row">
                         <div class="counterCard" id="days">
 
@@ -79,7 +42,7 @@
                         JOURS
                     </div>
                 </div>
-                <div class="col-md-2 col-7">
+                <div class="col-md-2 col-6">
                     <div class="row">
                         <div class="counterCard" id="hours">
 
@@ -89,7 +52,7 @@
                         HEURES
                     </div>
                 </div>
-                <div class="col-md-2 col-7">
+                <div class="col-md-2 col-6">
                     <div class="row">
                         <div class="counterCard" id="minutes">
 
@@ -99,7 +62,7 @@
                         MINUTES
                     </div>
                 </div>
-                <div class="col-md-2 col-7">
+                <div class="col-md-2 col-6">
                     <div class="row">
                         <div class="counterCard" id="seconds">
 
@@ -195,17 +158,26 @@
 // import Particules from '../assets/js/particules'
 // import test from '../assets/js/test'
 import { setCounter } from '../assets/js/index.js'
-
+import Header from './Header'
+import Footer from './Footer'
 export default {
   name: 'Accueil',
+  
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      accueil: 'accueil'
     }
-  }
+  },
+  components: {
+    Header
+  },
+  created: function () {
+    setCounter()
+  },
 }
 
-setCounter()
+
 
 // particules()
 
@@ -224,6 +196,19 @@ body {
     background: -webkit-linear-gradient(#9e7d6e, #d5ba97);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: calson;
+    // font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    background: -webkit-linear-gradient(#9e7d6e, #d5ba97);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: calson;
+    // font-weight: bold;
+
+    // text-transform: uppercase
   }
   
   footer {
@@ -232,6 +217,11 @@ body {
     bottom: 0;
     width: 100%;
   }
+
+  @font-face {
+  font-family: calson;
+  src: url('../assets/css/calson.ttf');
+}
 
   .footerRow {
       padding-left: 1rem;
@@ -280,7 +270,7 @@ body {
     display: flex!important;
     height: 30px;
     width: 30px;
-    background: white;
+    background: transparent;
     border-radius: 50%;
     transition: 0.7s; 
   }
@@ -311,7 +301,7 @@ body {
   }
   
   .mainContainer {
-    width: 70%;
+    width: 95%;
     display: grid;
   }
   
@@ -349,6 +339,7 @@ body {
     border-radius: 3rem !important;
     padding: 1rem 1.5rem !important;
     transition: 0.7s!important;
+    font-weight: bold;
   }
   
   .button:active {
@@ -396,7 +387,7 @@ body {
     margin-top: 1.5rem;
   }
   
-  .comingSoon {
+  .darkTheme {
     min-height: 100vh;
     min-width: 100%;
   
@@ -431,5 +422,6 @@ body {
     position:absolute; 
     width: 100%; 
     height: 100%;  
+    overflow: hidden;
   }
 </style>
