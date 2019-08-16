@@ -223,6 +223,11 @@ body {
   src: url('../assets/css/calson.ttf');
 }
 
+@font-face {
+  font-family: proxima;
+  src: url('../assets/css/proxima.ttf');
+}
+
   .footerRow {
       padding-left: 1rem;
   }
