@@ -3,10 +3,14 @@
     class
     v-show="mainElement || rightElement || leftElement || midLeftElement || midRightElement"
   >
-    <div class="middle" v-show="mainElement">{{student.prenom}} {{student.nom}}</div>
+    <div class="middle" v-show="mainElement">
+        <!-- <img  class="responsiveImage" src="../../assets/antoine.png" v-bind:alt="'/assets/' + student.photoProfil"> -->
+        {{student.prenom}} {{student.nom}}
+        </div>
 
     <slot></slot>
     <div class="right hidden" v-show="rightElement">
+        
       {{student.prenom}} {{student.nom}}
       <slot></slot>
     </div>
@@ -15,7 +19,7 @@
       <slot></slot>
     </div>
     <div class="midLeft hidden" v-show="midLeftElement">
-      {{student.prenom}} {{student.nom}} midleft
+      {{student.prenom}} {{student.nom}} 
       <slot></slot>
     </div>
     <div class="left hidden" v-show="leftElement">
@@ -128,38 +132,38 @@ export default {
 .left {
   text-align: left;
   position: absolute;
-  left: 0px;
-  padding-top: 10%;
-  width: 10%;
+  left: 0;
+  padding-top: 20%;
+  width: 8%;
 }
 
 .right {
   text-align: right;
   position: absolute;
-  right: 0px;
-  width: 10%;
+  right: 0;
+  width: 8%;
   padding-top: 20%;
 }
 .midRight {
   text-align: right;
   position: absolute;
-  right: 10px;
-  width: 10%;
+  right: 10%;
+  width: 15%;
   padding-top: 10%;
 }
 .midLeft {
   text-align: left;
   position: absolute;
-  left: 10px;
-  width: 10%;
-  padding-top: 20%;
+  left: 10%;
+  width: 15%;
+  padding-top: 10%;
 }
 
 .middle {
   text-align: center;
   position: absolute;
-  width: 60%;
-  left: calc(50% - 30%);
+  width: 46%;
+  left: calc(50% - 23%);
   @media (max-width: 992px) {
     width: 80% !important;
     left: calc(50% - 40%);
