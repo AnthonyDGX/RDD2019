@@ -1,20 +1,14 @@
 <template>
-  <div class="w33 maxWidth">
-    <div class="" v-show="mainElement">
-      <div class="mainPicture" id="minutes"></div>
-           {{index}}
+  <div class v-show="mainElement || rightElement || leftElement">
+    <div class="middle" v-show="mainElement">middle {{index}}</div>
 
+    <slot></slot>
+    <div class="right" v-show="rightElement">
+      rigth {{index}}
       <slot></slot>
     </div>
-    <div class="" v-show="rightElement">
-      <div class="mainPicture right"></div>
-      {{index}}
-      <slot></slot>
-    </div>
-    <div class="" v-show="leftElement">
-      <div class="mainPicture left"></div>
-           {{index}}
-
+    <div class="left" v-show="leftElement">
+      left {{index}}
       <slot></slot>
     </div>
   </div>
@@ -25,22 +19,48 @@ export default {
   data() {
     return {
       index: 0,
-      maxSlide: 0
+      maxSlide: 0,
+      left: false,
+      right: false,
+      middle: false
     };
+  },
+  mounted() {
   },
   computed: {
     visible() {
+        
       return this.index === this.$parent.index;
     },
     rightElement() {
-      console.log(this.$parent.index);
-      return this.index === this.$parent.index + 1;
+        if(this.$parent.index === this.maxSlide -1 && this.index === 0) {
+            console.log("RIGGGHT")
+            console.log(this.index)
+            this.right = true;
+            return this.right;
+        }
+      this.index === this.$parent.index + 1
+        ? (this.right = true)
+        : (this.right = false);
+      return this.right;
     },
     leftElement() {
-      return this.index === this.$parent.index - 1;
+         if(this.$parent.index === 0 && this.index === this.maxSlide - 1) {
+            console.log("LEFFFT")
+            console.log(this.index)
+            this.left = true;
+            return this.left;
+        }
+      this.index === this.$parent.index - 1
+        ? (this.left = true)
+        : (this.left = false);
+      return this.left;
     },
     mainElement() {
-      return this.index === this.$parent.index;
+      this.index === this.$parent.index
+        ? (this.middle = true)
+        : (this.middle = false);
+      return this.middle;
     }
   }
 };
@@ -64,11 +84,13 @@ export default {
 }
 
 .left {
-  padding-top: 50%;
-}
+text-align: left}
 
 .right {
-  padding-top: 50%;
+text-align: right}
+
+.middle {
+    text-align:center;
 }
 
 .mainPicture {
