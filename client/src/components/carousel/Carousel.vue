@@ -1,6 +1,9 @@
 <template>
   <div class="carousel">
-    <slot></slot>
+      <div class="row h90">
+ <slot></slot>
+      </div>
+   
     <button class="carousel__nav carousel__suivant" @click.prevent="next">suivant</button>
     <button class="carousel__nav carousel__precedent" @click.prevent="prev">precedent</button>
   </div>
@@ -11,7 +14,62 @@ export default {
   data() {
     return {
       index: 0,
-      slides: []
+      slides: [],
+      students: [
+          {
+              nom: "NGuyen Van",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          },
+          {
+              nom: "NGuyen Van 2",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          },
+          {
+              nom: "NGuyen Van 3",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          },
+          {
+              nom: "NGuyen Van 4",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          },
+          {
+              nom: "NGuyen Van 5",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          },{
+              nom: "NGuyen Van 6",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          }
+      ]
     };
   },
   computed: {
@@ -24,6 +82,8 @@ export default {
     this.slides.forEach((slide, i) => {
       slide.index = i;
       slide.maxSlide = this.slidesCount;
+      slide.student = this.students[i]   
+
     });
   },
   methods: {
@@ -47,5 +107,8 @@ export default {
 .carousel {
   position: relative;
   height: 100%;
+}
+.h90 {
+    height: 90%;
 }
 </style>

@@ -34,6 +34,9 @@
               <carousel-slide></carousel-slide>
               <carousel-slide></carousel-slide>
               <carousel-slide></carousel-slide>
+               <carousel-slide></carousel-slide>
+              <carousel-slide></carousel-slide>
+              
             </carousel>
           </div>
         </div>
