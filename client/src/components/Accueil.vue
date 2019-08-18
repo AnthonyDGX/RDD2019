@@ -172,9 +172,9 @@ export default {
   components: {
     Header
   },
-  created: function () {
-    setCounter()
-  },
+  mounted () {
+    setCounter();
+  }
 }
 
 

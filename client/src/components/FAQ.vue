@@ -44,7 +44,7 @@
             </div>-->
             <div
               class="col-12 leftCenterText"
-            >D'après Wikipédia, la Remise des Diplômes est une cérémonie au cours de laquelle sont décernés un ou plusieurs titres universitaires, faisant passer les participants du statut d'étudiant à celui d'ancien élève (*alumni*)…</div>
+            >D'après Wikipédia, la Remise des Diplômes est une cérémonie au cours de laquelle sont décernés un ou plusieurs titres universitaires, faisant passer les participants du statut d'étudiant à celui d'ancien élève (<i>alumni</i>)… <br/> D'après nous, c'est la meilleure soirée de l'année. C'est la seule occasion de venir sur ton 31.</div>
           </div>
         </div>
       </div>
