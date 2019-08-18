@@ -1,10 +1,21 @@
 <template>
-  <div class v-show="mainElement || rightElement || leftElement">
+  <div
+    class
+    v-show="mainElement || rightElement || leftElement || midLeftElement || midRightElement"
+  >
     <div class="middle" v-show="mainElement">{{student.prenom}} {{student.nom}}</div>
 
     <slot></slot>
     <div class="right hidden" v-show="rightElement">
       {{student.prenom}} {{student.nom}}
+      <slot></slot>
+    </div>
+    <div class="midRight hidden" v-show="midRightElement">
+      {{student.prenom}} {{student.nom}}
+      <slot></slot>
+    </div>
+    <div class="midLeft hidden" v-show="midLeftElement">
+      {{student.prenom}} {{student.nom}} midleft
       <slot></slot>
     </div>
     <div class="left hidden" v-show="leftElement">
@@ -21,6 +32,8 @@ export default {
       index: 0,
       maxSlide: 0,
       left: false,
+      midLeft: false,
+      midRight: false,
       right: false,
       middle: false,
       student: {
@@ -40,28 +53,54 @@ export default {
       return this.index === this.$parent.index;
     },
     rightElement() {
-      if (this.$parent.index === this.maxSlide - 1 && this.index === 0) {
-        console.log("RIGGGHT");
+      if (this.$parent.index === this.maxSlide - 2 && this.index === 0) {
+        console.log("RIGHT");
+        this.right = true;
+        return this.right;
+      }
+      if (this.$parent.index === this.maxSlide - 1 && this.index === 1) {
         console.log(this.index);
         this.right = true;
         return this.right;
       }
-      this.index === this.$parent.index + 1
+      this.index === this.$parent.index + 2
         ? (this.right = true)
         : (this.right = false);
       return this.right;
     },
     leftElement() {
-      if (this.$parent.index === 0 && this.index === this.maxSlide - 1) {
-        console.log("LEFFFT");
-        console.log(this.index);
+      if (this.$parent.index === 0 && this.index === this.maxSlide - 2) {
         this.left = true;
         return this.left;
       }
-      this.index === this.$parent.index - 1
+      if (this.$parent.index === 1 && this.index === this.maxSlide - 1) {
+        this.left = true;
+        return this.left;
+      }
+      this.index === this.$parent.index - 2
         ? (this.left = true)
         : (this.left = false);
       return this.left;
+    },
+    midRightElement() {
+      if (this.$parent.index === this.maxSlide - 1 && this.index === 0) {
+        this.midRight = true;
+        return this.midRight;
+      }
+      this.index === this.$parent.index + 1
+        ? (this.midRight = true)
+        : (this.midRight = false);
+      return this.midRight;
+    },
+    midLeftElement() {
+      if (this.$parent.index === 0 && this.index === this.maxSlide - 1) {
+        this.midLeft = true;
+        return this.midLeft;
+      }
+      this.index === this.$parent.index - 1
+        ? (this.midLeft = true)
+        : (this.midLeft = false);
+      return this.midLeft;
     },
     mainElement() {
       this.index === this.$parent.index
@@ -91,15 +130,29 @@ export default {
   position: absolute;
   left: 0px;
   padding-top: 10%;
-  width: 20%;
+  width: 10%;
 }
 
 .right {
   text-align: right;
   position: absolute;
   right: 0px;
-  width: 20%;
+  width: 10%;
+  padding-top: 20%;
+}
+.midRight {
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  width: 10%;
   padding-top: 10%;
+}
+.midLeft {
+  text-align: left;
+  position: absolute;
+  left: 10px;
+  width: 10%;
+  padding-top: 20%;
 }
 
 .middle {
@@ -107,7 +160,7 @@ export default {
   position: absolute;
   width: 60%;
   left: calc(50% - 30%);
-   @media (max-width: 992px) {
+  @media (max-width: 992px) {
     width: 80% !important;
     left: calc(50% - 40%);
   }

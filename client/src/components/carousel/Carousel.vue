@@ -17,7 +17,16 @@ export default {
       slides: [],
       students: [
           {
-              nom: "NGuyen Van",
+              nom: "NGuyen Van 0",
+              prenom: "Antoine",
+              reve: "Astronaute",
+              surnom: "Titi",
+              descr: "Pirouette Cacahuete",
+              photoReve: "astro.png",
+              photoProfil: "antoine.png"
+          },
+          {
+              nom: "NGuyen Van 1",
               prenom: "Antoine",
               reve: "Astronaute",
               surnom: "Titi",
@@ -51,17 +60,8 @@ export default {
               descr: "Pirouette Cacahuete",
               photoReve: "astro.png",
               photoProfil: "antoine.png"
-          },
-          {
-              nom: "NGuyen Van 5",
-              prenom: "Antoine",
-              reve: "Astronaute",
-              surnom: "Titi",
-              descr: "Pirouette Cacahuete",
-              photoReve: "astro.png",
-              photoProfil: "antoine.png"
           },{
-              nom: "NGuyen Van 6",
+              nom: "NGuyen Van 5",
               prenom: "Antoine",
               reve: "Astronaute",
               surnom: "Titi",
