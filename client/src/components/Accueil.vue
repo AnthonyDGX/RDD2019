@@ -306,7 +306,7 @@ body {
   }
   
   .mainContainer {
-    width: 95%;
+    width: 95%!important;
     display: grid;
   }
   

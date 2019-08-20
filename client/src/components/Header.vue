@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="head">
        
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color header vh10">
+    <nav  v-bind:class="[theme == 'black' ? 'navbar navbar-expand-lg navbar-dark primary-color header vh10 darkNav' : 'navbar navbar-expand-lg navbar-dark primary-color header vh10']" >
        
       <!-- Navbar brand -->
        <router-link class="navbar-brand" to="/">RDD 2k19</router-link>
@@ -33,6 +33,10 @@
             <!-- <a class="nav-link menuItem" href="/Faq">FAQ</a> -->
           </li>
           <li class="nav-item">
+            <router-link v-bind:class="[itemMenu == 'memories' ? 'nav-link menuItem active' : 'nav-link menuItem']" to="/Memories">SOUVENIRS</router-link>
+            <!-- <a class="nav-link menuItem" href="/Faq">FAQ</a> -->
+          </li>
+          <li class="nav-item">
             <a v-bind:class="[itemMenu == 'inscription' ? 'nav-link menuItem active' : 'nav-link menuItem']" href="#">INSCRIPTIONS</a>
           </li>
         </ul>
@@ -48,7 +52,7 @@
 <script>
 export default {
   name: "Header",
-  props: ['itemMenu'],
+  props: ['itemMenu', 'theme'],
   created: function () {
   },
   data() {
@@ -61,8 +65,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+
+.darkNav {
+      background: linear-gradient( 90deg, rgba(0, 0, 0, 1) 0%, rgba(13, 15, 33, 1) 0%, rgba(5, 31, 63, 1) 100% )!important;
+}
 .header {
-  background: transparent;
+      background: linear-gradient( 90deg, rgba(0, 0, 0, 1) 0%, rgba(13, 15, 33, 1) 0%, rgba(5, 31, 63, 1) 100% )!important;
   -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
   -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0);

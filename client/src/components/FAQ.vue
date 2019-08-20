@@ -100,6 +100,31 @@
           </div>
         </div>
       </div>
+
+      <div class="row justify-content-center align-items-center mtop">
+        <div class="col-12 col-lg-8 questionGroup">
+          <div class="cardHeader">
+            <div class="row question">
+              <!-- <div class="col-2 col-lg-1 noPadding">
+                <h1>Q.</h1>
+              </div> -->
+              <div
+                class="col-12 leftCenterText"
+              > <b>4.</b> Quel est le programme de la soirée ?</div>
+            </div>
+          </div>
+
+          <div class="row reponse">
+            <!-- <div class="col-2 col-lg-1 noPadding">
+              <h1>R.</h1>
+            </div>-->
+            <div
+              class="col-12 leftCenterText"
+            >La soirée va être très chargée ! <button>Decouvrir</button> </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <Footer></Footer>
   </div>
