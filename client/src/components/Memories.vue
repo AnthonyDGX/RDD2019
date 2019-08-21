@@ -1,7 +1,7 @@
 <template>
   <div class="darkTheme">
     <transition name="fade"></transition>
-     <vue-particles
+    <vue-particles
       color="#d5ba97"
       :particleOpacity="0.7"
       :particlesNumber="80"
@@ -29,12 +29,12 @@
                 <div class="profilIcon p2k18"></div>
                 <div class="profilText">
                   <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
-                    <b>Promo2018</b>
+                    <b>Promo2019</b>
                     <span>Castres, France</span>
                   </div>
                 </div>
               </div>
-              <img src="../assets/rdd2k18/IMG_9704.jpg" class="card-img-top" alt="..." />
+              <img src="../assets/rdd2k18/2019.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <div class="row" style="width: 100%; margin-left: 0px;">
                   <i class="fa fa-heart custIcons" style="color: red;"></i>
@@ -42,44 +42,46 @@
                 </div>
                 <div
                   style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
-                >2543 J'aime</div>
+                >2019 J'aime</div>
 
                 <p class="card-text">
-                  <span class="nameFont">Promo2018</span> #HAMZAAA
+                  <span class="nameFont">Promo2019</span> #2019 Nos futurs diplômés.
                 </p>
               </div>
             </div>
           </div>
 
-           <div class="row">
-            <div class="card">
-              <div class="cardHead">
-                <div class="profilIcon tt"></div>
-                <div class="profilText">
-                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
-                    <b>pierre.irib</b>
-                    <span>Castres, France</span>
+          <transition name="fade">
+            <div class="row">
+              <div class="card">
+                <div class="cardHead">
+                  <div class="profilIcon pierre"></div>
+                  <div class="profilText">
+                    <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                      <b>pierre.irib</b>
+                      <span>Castres, France</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <img src="../assets/rdd2k18/IMG_9743.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <div class="row" style="width: 100%; margin-left: 0px;">
-                  <i class="fa fa-heart custIcons" style="color: red;"></i>
-                  <i class="fa fa-comments custIcons"></i>
-                </div>
-                <div
-                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
-                >2543 J'aime</div>
+                <img src="../assets/rdd2k18/pierre.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="row" style="width: 100%; margin-left: 0px;">
+                    <i class="fa fa-heart custIcons" style="color: red;"></i>
+                    <i class="fa fa-comments custIcons"></i>
+                  </div>
+                  <div
+                    style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                  >1995 J'aime</div>
 
-                <p class="card-text">
-                  <span class="nameFont">pierre.irib</span> #TETE Super soireee
-                </p>
+                  <p class="card-text">
+                    <span class="nameFont">pierre.irib</span> #HAMZA Sauce God
+                    <i class="fa fa-music"></i>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </transition>
 
-          
           <div class="row">
             <div class="card">
               <div class="cardHead">
@@ -91,7 +93,7 @@
                   </div>
                 </div>
               </div>
-              <img src="../assets/rdd2k18/IMG_9200.jpg" class="card-img-top" alt="..." />
+              <img src="../assets/rdd2k18/tt.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <div class="row" style="width: 100%; margin-left: 0px;">
                   <i class="fa fa-heart custIcons" style="color: red;"></i>
@@ -99,10 +101,10 @@
                 </div>
                 <div
                   style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
-                >2543 J'aime</div>
+                >2443 J'aime</div>
 
                 <p class="card-text">
-                  <span class="nameFont">TTdu81</span> #TETE Super soireee
+                  <span class="nameFont">TTdu81</span> #TETE #LABOULEAZ Mon meilleur profil.
                 </p>
               </div>
             </div>
@@ -114,12 +116,12 @@
                 <div class="profilIcon soso"></div>
                 <div class="profilText">
                   <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
-                    <b>SosoThaiti</b>
+                    <b>JasmineG</b>
                     <span>Castres, France</span>
                   </div>
                 </div>
               </div>
-              <img src="../assets/rdd2k18/IMG_9272.jpg" class="card-img-top" alt="..." />
+              <img src="../assets/rdd2k18/filles.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <div class="row" style="width: 100%; margin-left: 0px;">
                   <i class="fa fa-heart custIcons" style="color: red;"></i>
@@ -130,7 +132,399 @@
                 >243 J'aime</div>
 
                 <p class="card-text">
-                  <span class="nameFont">SoSoThaiti</span>#BFF Super soireee
+                  <span class="nameFont">JasmineG</span> #BFF Super soirée
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon fb"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>perieremilie</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/framboisine.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >2434 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">perieremilie</span> #FRAMBOISINE Juste une bolinette
+                  <i class="fa fa-glass-martini"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon orlando"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>OlrandoBloom</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/orlando.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >24 466 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">OrlandoBloom</span>#TBT Having good times with friends in Castres City.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon art"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>Arthour</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/arthur.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >2433 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">Arthour</span> Salut toi
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon andorre"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>Vin100</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/andorre.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >20100 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">Vin100</span> L'andorran endurant.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon p2k18"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>Promo2019</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/2019-2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >2019 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">Promo2019</span> #2019 Nos futurs diplômés le retour.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon khaled"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>KhaledOffishal</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/la4a.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >2000 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">KhaledOffishal</span> La 4A (la 4A), Je te veux si tu veux de moiiii
+                  <i class="fa fa-music"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon tt"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>RDD2k18</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/awards.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >2231 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">RDD2k18</span> La remise des Awards ISIS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon roulenq"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>VincentR</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/anciens.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >5436 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">VicentR</span> En espérant les revoir cette année.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon mago"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>Margow</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/mago.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >5654 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">Margow</span> Elle fait la gow...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon p2k18"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>Promo2022</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/2022.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >2022 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">Promo2022</span> #2022 Nos futurs diplômés (dans plus longtemps).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon tt"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>RDD2k18</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/lights.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >3421 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">RDD2k18</span> Ambiance
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon soso"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>SosoTahiti</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/peltasse.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >5432 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">SosoTahiti</span> Qui est la plus bonne bonne bonne de tes copines.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon lar"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>Lardons</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/lardons.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >7632 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">Lardons</span> La team des lardons, since 2015.
+                </p>
+              </div>
+            </div>
+          </div>
+
+           <div class="row">
+            <div class="card">
+              <div class="cardHead">
+                <div class="profilIcon pierre"></div>
+                <div class="profilText">
+                  <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
+                    <b>pierre.irib</b>
+                    <span>Castres, France</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/rdd2k18/alter.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="row" style="width: 100%; margin-left: 0px;">
+                  <i class="fa fa-heart custIcons" style="color: red;"></i>
+                  <i class="fa fa-comments custIcons"></i>
+                </div>
+                <div
+                  style="font-weight: bold; font-size: 0.75rem; margin-bottom: 0.5rem; margin-top: 0.5rem"
+                >4332 J'aime</div>
+
+                <p class="card-text">
+                  <span class="nameFont">pierre.irib</span> Qui est la plus bonne bonne bonne de tes copines.
                 </p>
               </div>
             </div>
@@ -143,7 +537,7 @@
               <div class="profilText">
                 <div class="row" style="font-size: 1rem;line-height: 1rem; display: grid;">
                   <b class="golden">RDD2k18</b>
-                  <span style="color: white">Remise des Diplomes 2018</span>
+                  <span style="color: white">Remise des Diplômés 2018</span>
                 </div>
               </div>
             </div>
@@ -220,7 +614,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
 .storie {
   height: 3rem;
 }
@@ -283,16 +676,51 @@ export default {
 }
 
 .tt {
-  background-image: url("../assets/rdd2k18/IMG_9200.jpg");
+  background-image: url("../assets/rdd2k18/tt.jpg");
+}
+
+.orlando {
+  background-image: url("../assets/rdd2k18/orl.jpg");
+}
+
+.andorre {
+  background-image: url("../assets/rdd2k18/andorre.jpg");
+}
+
+.lar {
+  background-image: url("../assets/rdd2k18/lar.jpg");
+}
+
+
+.roulenq {
+  background-image: url("../assets/rdd2k18/roulenq.jpg");
+}
+
+.pierre {
+  background-image: url("../assets/rdd2k18/pierre.jpg");
+}
+
+.art {
+  background-image: url("../assets/rdd2k18/arthur.jpg");
+}
+.khaled {
+  background-image: url("../assets/rdd2k18/khaled.jpg");
 }
 
 .soso {
-  background-image: url("../assets/rdd2k18/IMG_9272.jpg");
+  background-image: url("../assets/rdd2k18/filles.jpg");
 }
 
-.p2k18{
-      background-image: url("../assets/rdd2k18/IMG_9704.jpg");
+.mago {
+  background-image: url("../assets/rdd2k18/mago.jpg");
+}
 
+.p2k18 {
+  background-image: url("../assets/rdd2k18/2019.jpg");
+}
+
+.fb {
+  background-image: url("../assets/rdd2k18/framboisine.jpg");
 }
 
 .bigger {
@@ -351,16 +779,15 @@ img {
 .rightBand {
   height: 100%;
   margin-left: 1rem;
-   @media (max-width: 768px) {
-          display: none!important;
-      }
+  @media (max-width: 768px) {
+    display: none !important;
+  }
 }
 
 .rightRow {
   position: fixed;
   display: grid;
   margin-left: 0.5rem;
-  
 }
 .cardContent {
   height: 80%;
@@ -395,7 +822,7 @@ b {
 
 #particles-js {
   position: absolute;
-  height: 90vh;
+  height: 100%;
   width: 100vw;
 }
 .cardHeader {

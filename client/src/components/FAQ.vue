@@ -1,6 +1,5 @@
 <template>
   <div class="darkTheme">
-    <transition name="fade"></transition>
     <vue-particles
       color="#d5ba97"
       :particleOpacity="0.7"
@@ -19,6 +18,8 @@
       clickMode="push"
     ></vue-particles>
     <Header :itemMenu="faq"></Header>
+
+    
 
     <div class="container vh80 mainContainer">
       <div class="row justify-content-center align-items-center mtop centerText">
@@ -120,7 +121,7 @@
             </div>-->
             <div
               class="col-12 leftCenterText"
-            >La soirée va être très chargée ! <button>Decouvrir</button> </div>
+            >La soirée va être très chargée ! Un espace expliquant la soirée en détail arrive bientôt ! </div>
           </div>
         </div>
       </div>
